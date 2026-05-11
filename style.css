@@ -8,6 +8,7 @@ body{
     font-family: Arial, sans-sarif;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-color: darkblue;
 }
 
 /*Header Section*/
@@ -163,9 +164,49 @@ main a p{
     font-weight: bold;
 }
 
+/*Footer Section*/
+footer{
+    background-color: #006eff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 20px #ff0000;
+    margin: 20px;
+    border-radius: 20px;
+}
+
 /*Animations Section*/
 @keyframes shine{
     to{
         left: 100%;
+    }
+}
+
+@keyframes bg{
+    0%{
+        background-color: #f50000;
+        box-shadow: 0 0 15px #0ea5e9;
+    }
+    20%{
+        background-color: #3ead22;
+        box-shadow: 0 0 15px #095b69;
+    }
+    30%{
+        background-color: #25ce7f
+    }
+    40%{
+        background-color: #095b69
+    }
+    50%{
+        background-color: #2167888c
+    }
+    60%{
+        background-color: #3700ff;
+    }
+    70%{
+        background: linear-gradient(to left, #3010a34d, #2167888c)
+    }
+    100%{
+        background: linear-gradient(to right, #3010a34d, #2167888c)
     }
 }
